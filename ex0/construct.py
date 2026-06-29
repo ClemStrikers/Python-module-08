@@ -4,18 +4,16 @@ import site
 
 
 def main() -> None:
-    print("Welcome to the Real World of Data Engineering\n")
-
     is_venv: bool = sys.prefix != sys.base_prefix
 
     if not is_venv:
-        print("MATRIX STATUS: You're still plugged in")
+        print("MATRIX STATUS: You're still plugged in\n")
         print(f"Current Python: {sys.executable}")
         print("Virtual Environment: None detected")
         print("\nWARNING: You're in the global environment!")
         print("The machines can see everything you install.")
         print("\nTo enter the construct, run:")
-        print("python -m venv matrix_env")
+        print("python3 -m venv matrix_env")
         print("source matrix_env/bin/activate # On Unix")
         print(r"matrix_env\Scripts\activate # On Windows")
         print("\nThen run this program again.")
